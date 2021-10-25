@@ -12,6 +12,7 @@ abline(coefs[1], coefs[2])
 qt(.975, 29)
 pt(1.94, 29)
 math <- read_csv(file.choose())
+
 head(math)
 fit = lm(math ~ science, data = math)
 summary(fit)
